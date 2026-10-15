@@ -1,4 +1,6 @@
+# robots.txt for Nobles Electrical Services, LLC
 User-agent: *
 Allow: /
 
+# XML Sitemap
 Sitemap: https://www.nobleselectricalservices.com/sitemap.xml
