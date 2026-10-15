@@ -190,7 +190,7 @@ export default function HomePage() {
                 ))}
               </ul>
               <div className="mt-7">
-                <Link to="/electrical-repairs" className="btn-outline">
+                <Link to="/electrical-repairs-zachary-la" className="btn-outline">
                   Explore Electrical Repairs
                   <ArrowRight className="h-4 w-4" />
                 </Link>
@@ -247,7 +247,7 @@ export default function HomePage() {
               </ul>
               <div className="mt-7">
                 <Link
-                  to="/commercial-electrical"
+                  to="/commercial-electrical-zachary-la"
                   className="inline-flex items-center justify-center gap-2 rounded-lg border-2 border-amber-400/40 px-6 py-3.5 text-sm font-semibold text-amber-400 transition-all duration-200 hover:border-amber-400 hover:bg-amber-400 hover:text-navy-950"
                 >
                   View Commercial Services
@@ -287,7 +287,7 @@ export default function HomePage() {
                 ))}
               </div>
               <div className="mt-7">
-                <Link to="/electrical-repairs" className="btn-outline">
+                <Link to="/electrical-repairs-zachary-la" className="btn-outline">
                   Explore Electrical Repairs
                   <ArrowRight className="h-4 w-4" />
                 </Link>
@@ -335,7 +335,7 @@ export default function HomePage() {
                 ))}
               </div>
               <div className="mt-7">
-                <Link to="/electrical-panel-services" className="btn-outline">
+                <Link to="/electrical-panel-services-zachary-la" className="btn-outline">
                   View Panel Upgrades
                   <ArrowRight className="h-4 w-4" />
                 </Link>
@@ -368,13 +368,13 @@ export default function HomePage() {
                 From recessed lighting and ceiling fans to GFCI outlets and smart switches, we install and upgrade the electrical devices you use every day. We make sure each device is properly wired, grounded, and safe — and that it looks great in your space.
               </p>
               <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2">
-                <Link to="/lighting-installation" className="group rounded-xl border border-graphite-100 bg-graphite-50 p-5 transition-all hover:border-navy-200 hover:shadow-lg">
+                <Link to="/lighting-installation-zachary-la" className="group rounded-xl border border-graphite-100 bg-graphite-50 p-5 transition-all hover:border-navy-200 hover:shadow-lg">
                   <Lightbulb className="h-7 w-7 text-amber-500" />
                   <h3 className="mt-3 font-display text-base font-bold text-navy-900">Lighting Installation</h3>
                   <p className="mt-1 text-xs text-graphite-600">Recessed lights, ceiling fans, exterior lighting, and LED upgrades.</p>
                   <span className="mt-2 flex items-center gap-1 text-xs font-semibold text-amber-600">Explore <ArrowRight className="h-3 w-3 transition-transform group-hover:translate-x-1" /></span>
                 </Link>
-                <Link to="/outlets-switches" className="group rounded-xl border border-graphite-100 bg-graphite-50 p-5 transition-all hover:border-navy-200 hover:shadow-lg">
+                <Link to="/outlets-switches-zachary-la" className="group rounded-xl border border-graphite-100 bg-graphite-50 p-5 transition-all hover:border-navy-200 hover:shadow-lg">
                   <Plug className="h-7 w-7 text-amber-500" />
                   <h3 className="mt-3 font-display text-base font-bold text-navy-900">Outlets &amp; Switches</h3>
                   <p className="mt-1 text-xs text-graphite-600">GFCI outlets, dimmer switches, smart switches, and grounded receptacles.</p>

@@ -15,7 +15,7 @@ export default function LocationPage({ locSlug }: { locSlug?: string }) {
 
   if (!location) return <Navigate to="/service-areas" replace />;
 
-  const currentService = services.find((s) => s.slug === location.serviceSlug);
+  const currentService = services.find((s) => s.slug === location.serviceSlug || s.baseSlug === location.serviceSlug);
   const pagePath = `/${location.serviceSlug}-${location.slug}`;
 
   const crumbs = [
@@ -101,7 +101,7 @@ export default function LocationPage({ locSlug }: { locSlug?: string }) {
                 While this page highlights {currentService?.shortTitle.toLowerCase() || 'our services'} in {location.city}, we also offer:
               </p>
               <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
-                {services.filter((s) => s.slug !== location.serviceSlug).slice(0, 6).map((s) => (
+                {services.filter((s) => s.slug !== location.serviceSlug && s.baseSlug !== location.serviceSlug).slice(0, 6).map((s) => (
                   <Link
                     key={s.slug}
                     to={`/${s.slug}`}

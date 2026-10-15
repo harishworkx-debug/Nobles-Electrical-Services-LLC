@@ -13,6 +13,10 @@ export default function DynamicPage() {
   const service = services.find((s) => s.slug === pageSlug);
   if (service) return <ServicePage serviceSlug={pageSlug} />;
 
+  // If pageSlug matches a base service slug (e.g. electrical-installation), redirect to its location slug (e.g. electrical-installation-zachary-la)
+  const baseService = services.find((s) => s.baseSlug === pageSlug);
+  if (baseService) return <Navigate to={`/${baseService.slug}`} replace />;
+
   // Try location page (format: serviceSlug-locationSlug, e.g. electrical-repairs-zachary-la)
   const location = locations.find((l) => `${l.serviceSlug}-${l.slug}` === pageSlug);
   if (location) return <LocationPage locSlug={pageSlug} />;

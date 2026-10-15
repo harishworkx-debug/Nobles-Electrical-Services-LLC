@@ -4,7 +4,7 @@ import * as Icons from 'lucide-react';
 import { services } from '@/data/services';
 
 export default function ServiceCard({ slug, compact = false }: { slug: string; compact?: boolean }) {
-  const service = services.find((s) => s.slug === slug);
+  const service = services.find((s) => s.slug === slug || s.baseSlug === slug);
   if (!service) return null;
 
   const Icon = (Icons[service.needs[0]?.icon as keyof typeof Icons] || Icons.Zap) as Icons.LucideIcon;

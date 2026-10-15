@@ -23,7 +23,10 @@ let match;
 while ((match = locationBlockRegex.exec(locationsContent)) !== null) {
   const locSlug = match[1];
   const serviceSlug = match[2];
-  locationPages.push(`${serviceSlug}-${locSlug}`);
+  const fullSlug = `${serviceSlug}-${locSlug}`;
+  if (!serviceSlugMatches.includes(fullSlug) && !locationPages.includes(fullSlug)) {
+    locationPages.push(fullSlug);
+  }
 }
 
 const mainPages = [

@@ -4,6 +4,7 @@ import ScrollToTop from '@/components/ScrollToTop';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import DynamicPage from '@/pages/DynamicPage';
+import { services } from '@/data/services';
 import { locations } from '@/data/locations';
 
 const HomePage = lazy(() => import('@/pages/HomePage'));
@@ -24,7 +25,11 @@ function PageLoader() {
 
 function ServiceRedirect() {
   const { serviceSlug } = useParams<{ serviceSlug: string }>();
-  return <Navigate to={`/${serviceSlug || ''}`} replace />;
+  const match = services.find((s) => s.baseSlug === serviceSlug || s.slug === serviceSlug);
+  if (match) {
+    return <Navigate to={`/${match.slug}`} replace />;
+  }
+  return <Navigate to={`/${serviceSlug || 'services'}`} replace />;
 }
 
 function ServiceAreaRedirect() {
