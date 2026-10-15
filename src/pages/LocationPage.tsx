@@ -79,43 +79,33 @@ export default function LocationPage({ locSlug }: { locSlug?: string }) {
               </h2>
               <p className="mt-4 text-base leading-relaxed text-graphite-600">{location.localContext}</p>
 
-              {/* Primary Service */}
-              {currentService && (
-                <div className="mt-10 rounded-2xl border border-graphite-100 bg-graphite-50 p-6">
-                  <span className="text-sm font-bold uppercase tracking-wider text-amber-600">Primary Service in {location.city}</span>
-                  <h3 className="mt-2 font-display text-xl font-bold text-navy-900">{currentService.title}</h3>
-                  <p className="mt-3 text-sm leading-relaxed text-graphite-600">{currentService.summary}</p>
-                  <Link
-                    to={`/${currentService.slug}`}
-                    className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-amber-600 hover:text-amber-500"
-                  >
-                    Learn About {currentService.shortTitle}
+              {/* Electrical Services in Location */}
+              <div className="mt-10">
+                <span className="text-sm font-bold uppercase tracking-wider text-amber-600">Local Electrician Services</span>
+                <h3 className="mt-2 font-display text-2xl font-bold text-navy-900">
+                  Electrical Services We Provide in {location.city}, {location.stateAbbr}
+                </h3>
+                <p className="mt-3 text-base text-graphite-600">
+                  Nobles Electrical Services offers a full range of residential and commercial electrical solutions for homeowners and businesses in {location.city}:
+                </p>
+                <div className="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-2">
+                  {services.map((s) => (
+                    <Link
+                      key={s.slug}
+                      to={`/${s.slug}`}
+                      className="flex items-center gap-3 rounded-xl border border-graphite-100 bg-white p-3.5 transition-all hover:border-navy-200 hover:shadow-md group"
+                    >
+                      <CheckCircle2 className="h-5 w-5 flex-shrink-0 text-amber-500" />
+                      <span className="text-sm font-medium text-navy-800 group-hover:text-amber-600 transition-colors">{s.shortTitle}</span>
+                    </Link>
+                  ))}
+                </div>
+                <div className="mt-6">
+                  <Link to="/services" className="inline-flex items-center gap-1.5 text-sm font-semibold text-amber-600 hover:text-amber-500">
+                    View All Services Overview
                     <ArrowRight className="h-4 w-4" />
                   </Link>
                 </div>
-              )}
-
-              {/* Other Services */}
-              <h3 className="mt-10 font-display text-xl font-bold text-navy-900">Other Services Available in {location.city}</h3>
-              <p className="mt-2 text-sm text-graphite-600">
-                While this page highlights {currentService?.shortTitle.toLowerCase() || 'our services'} in {location.city}, we also offer:
-              </p>
-              <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
-                {services.filter((s) => s.slug !== location.serviceSlug && s.baseSlug !== location.serviceSlug).slice(0, 6).map((s) => (
-                  <Link
-                    key={s.slug}
-                    to={`/${s.slug}`}
-                    className="flex items-center gap-3 rounded-xl border border-graphite-100 bg-white p-3.5 transition-all hover:border-navy-200 hover:shadow-md"
-                  >
-                    <CheckCircle2 className="h-5 w-5 flex-shrink-0 text-amber-500" />
-                    <span className="text-sm font-medium text-navy-800">{s.shortTitle}</span>
-                  </Link>
-                ))}
-              </div>
-              <div className="mt-5">
-                <Link to="/services" className="text-sm font-semibold text-amber-600 hover:text-amber-500">
-                  View All Services
-                </Link>
               </div>
             </div>
 
@@ -189,11 +179,9 @@ export default function LocationPage({ locSlug }: { locSlug?: string }) {
                 All Service Areas
               </Link>
               <span className="text-graphite-600">|</span>
-              {currentService && (
-                <Link to={`/${currentService.slug}`} className="text-sm font-semibold text-amber-400 hover:text-amber-300">
-                  {currentService.shortTitle}
-                </Link>
-              )}
+              <Link to="/services" className="text-sm font-semibold text-amber-400 hover:text-amber-300">
+                All Electrical Services
+              </Link>
               <span className="text-graphite-600">|</span>
               <Link to="/contact" className="text-sm font-semibold text-amber-400 hover:text-amber-300">
                 Contact Page

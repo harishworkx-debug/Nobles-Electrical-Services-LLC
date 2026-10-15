@@ -87,7 +87,7 @@ export default function ServiceAreasPage() {
                 <div className="p-5">
                   <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-amber-600">
                     <Zap className="h-3.5 w-3.5" />
-                    {loc.serviceTitle}
+                    Licensed Electrician
                   </div>
                   <p className="mt-2 text-sm leading-relaxed text-graphite-600">
                     {loc.intro.slice(0, 110)}...
