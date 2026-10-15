@@ -1,9 +1,10 @@
 import { lazy, Suspense } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, useParams, Navigate } from 'react-router-dom';
 import ScrollToTop from '@/components/ScrollToTop';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import DynamicPage from '@/pages/DynamicPage';
+import { locations } from '@/data/locations';
 
 const HomePage = lazy(() => import('@/pages/HomePage'));
 const ServicesPage = lazy(() => import('@/pages/ServicesPage'));
@@ -11,6 +12,7 @@ const ServiceAreasPage = lazy(() => import('@/pages/ServiceAreasPage'));
 const AboutPage = lazy(() => import('@/pages/AboutPage'));
 const ContactPage = lazy(() => import('@/pages/ContactPage'));
 const FAQsPage = lazy(() => import('@/pages/FAQsPage'));
+const SitemapPage = lazy(() => import('@/pages/SitemapPage'));
 
 function PageLoader() {
   return (
@@ -18,6 +20,20 @@ function PageLoader() {
       <div className="h-8 w-8 animate-spin rounded-full border-3 border-navy-200 border-t-amber-500" />
     </div>
   );
+}
+
+function ServiceRedirect() {
+  const { serviceSlug } = useParams<{ serviceSlug: string }>();
+  return <Navigate to={`/${serviceSlug || ''}`} replace />;
+}
+
+function ServiceAreaRedirect() {
+  const { locationSlug } = useParams<{ locationSlug: string }>();
+  const match = locations.find((l) => l.slug === locationSlug);
+  if (match) {
+    return <Navigate to={`/${match.serviceSlug}-${match.slug}`} replace />;
+  }
+  return <Navigate to="/service-areas" replace />;
 }
 
 export default function App() {
@@ -31,10 +47,13 @@ export default function App() {
             <Routes>
               <Route path="/" element={<HomePage />} />
               <Route path="/services" element={<ServicesPage />} />
+              <Route path="/services/:serviceSlug" element={<ServiceRedirect />} />
               <Route path="/service-areas" element={<ServiceAreasPage />} />
+              <Route path="/service-areas/:locationSlug" element={<ServiceAreaRedirect />} />
               <Route path="/about" element={<AboutPage />} />
               <Route path="/contact" element={<ContactPage />} />
               <Route path="/faqs" element={<FAQsPage />} />
+              <Route path="/sitemap" element={<SitemapPage />} />
               <Route path="/:pageSlug" element={<DynamicPage />} />
               <Route path="*" element={<HomePage />} />
             </Routes>

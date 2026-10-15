@@ -129,6 +129,7 @@ export default function Footer() {
               <Link to="/about" className="text-xs text-graphite-500 hover:text-amber-400">About</Link>
               <Link to="/contact" className="text-xs text-graphite-500 hover:text-amber-400">Contact</Link>
               <Link to="/faqs" className="text-xs text-graphite-500 hover:text-amber-400">FAQs</Link>
+              <Link to="/sitemap" className="text-xs text-graphite-500 hover:text-amber-400">Sitemap</Link>
             </div>
           </div>
         </div>
