@@ -9,6 +9,7 @@ import CallCTA from '@/components/CallCTA';
 import FinalCTA from '@/components/FinalCTA';
 import FAQAccordion from '@/components/FAQAccordion';
 import ServiceCard from '@/components/ServiceCard';
+import ReviewsSection from '@/components/ReviewsSection';
 import { business, images } from '@/data/business';
 import { services } from '@/data/services';
 import { locations } from '@/data/locations';
@@ -16,8 +17,12 @@ import { generalFAQs } from '@/data/faqs';
 import { localBusinessSchema, faqSchema } from '@/components/StructuredData';
 
 const featuredSlugs = [
-  'electrical-repairs', 'electrical-panel-services', 'lighting-installation',
-  'outlets-switches', 'electrical-safety-inspections', 'wiring-rewiring',
+  'electrical-repairs-zachary-la',
+  'electrical-panel-services-zachary-la',
+  'lighting-installation-zachary-la',
+  'outlets-switches-zachary-la',
+  'electrical-safety-inspections-zachary-la',
+  'wiring-rewiring-zachary-la',
 ];
 
 const processSteps = [
@@ -47,8 +52,8 @@ export default function HomePage() {
   return (
     <>
       <SEO
-        title={`${business.name} | Electrician in ${business.primaryCity}, ${business.primaryStateAbbr}`}
-        description={`Dependable electrical services for your home and business in ${business.primaryCity}, ${business.primaryStateAbbr} and surrounding Louisiana areas. Repairs, panel upgrades, lighting, and more. Call ${business.phone}.`}
+        title="Electrician in Zachary, LA | Noble's Electrical Services"
+        description="Reliable residential and commercial electrical services in Zachary, Louisiana. Contact Noble's Electrical Services for electrical repairs, installations and upgrades. Call 225-472-0188."
         canonicalPath=""
         structuredData={structuredData}
       />
@@ -69,10 +74,10 @@ export default function HomePage() {
               {business.primaryCity}, {business.primaryStateAbbr} &amp; Surrounding Areas
             </div>
             <h1 className="mt-6 font-display text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl text-balance">
-              Dependable Electrical Services for Your Home and Business
+              Residential &amp; Commercial Electrician in Zachary, Louisiana
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-graphite-200 text-balance">
-              {business.name} provides professional electrical repairs, installations, panel upgrades, and lighting services to homeowners and businesses throughout the greater Zachary, Louisiana area.
+              {business.name} provides professional electrical repairs, panel upgrades, lighting installations, and troubleshooting for homeowners and businesses throughout Zachary and surrounding Louisiana communities.
             </p>
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
               <CallCTA variant="primary" label={`Call ${business.phone}`} className="px-8 py-4 text-base" />
@@ -83,6 +88,23 @@ export default function HomePage() {
                 Explore Our Services
                 <ArrowRight className="h-5 w-5" />
               </Link>
+            </div>
+
+            {/* Google Reviews Trust Badge */}
+            <div className="mt-8 flex flex-wrap items-center gap-3 pt-6 border-t border-white/10">
+              <div className="flex items-center gap-1">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="h-5 w-5 fill-amber-400 text-amber-400" />
+                ))}
+              </div>
+              <span className="font-display font-bold text-white">5.0 Star Rating</span>
+              <span className="text-graphite-400">·</span>
+              <a
+                href="#reviews"
+                className="text-sm font-medium text-amber-300 hover:text-amber-200 underline underline-offset-4"
+              >
+                30 Verified Google Reviews
+              </a>
             </div>
           </div>
         </div>
@@ -459,8 +481,12 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 11. Customer Reviews - omitted per instructions (no verified reviews available) */}
-      {/* Reviews section intentionally omitted - no verified customer reviews to publish */}
+      {/* 11. Customer Reviews */}
+      <ReviewsSection
+        initialCount={6}
+        title="What Zachary Homeowners & Businesses Say"
+        subtitle="Read real, verified Google reviews from clients across Zachary and surrounding Louisiana communities."
+      />
 
       {/* 12. Service Areas */}
       <section className="section-pad bg-graphite-50">

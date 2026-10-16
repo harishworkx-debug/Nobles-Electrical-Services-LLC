@@ -3,13 +3,15 @@ export const business = {
   phone: '225-472-0188',
   phoneHref: 'tel:2254720188',
   website: 'https://www.nobleselectricalservices.com/',
-  mapsListing: 'https://maps.app.goo.gl/1VmA72YoPVNw72ha9',
+  mapsListing: 'https://maps.app.goo.gl/1F6qqiBPyJ7Bhghz5',
   mapsEmbed:
     'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d439550.05573316134!2d-91.69708918217462!3d30.60619166304533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40404bf354ddb849%3A0x226400626076a97e!2sNobles%20Electrical%20Services%2C%20LLC!5e0!3m2!1sen!2sin!4v1792061003480!5m2!1sen!2sin',
   primaryCity: 'Zachary',
   primaryState: 'Louisiana',
   primaryStateAbbr: 'LA',
   category: 'Electrician',
+  rating: 5.0,
+  reviewCount: 30,
 };
 
 export const images = {

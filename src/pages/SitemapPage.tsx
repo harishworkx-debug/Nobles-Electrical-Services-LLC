@@ -13,16 +13,18 @@ export default function SitemapPage() {
     { title: 'Home', path: '/', description: 'Nobles Electrical Services homepage with overview of services, service areas, and company information.' },
     { title: 'All Services', path: '/services', description: 'Directory of all residential and commercial electrical services offered in Zachary, LA and surrounding areas.' },
     { title: 'Service Areas', path: '/service-areas', description: 'Communities we serve throughout Louisiana with local service details.' },
+    { title: 'Customer Reviews', path: '/reviews', description: 'Read all 30 verified 5-star Google reviews from homeowners and businesses.' },
     { title: 'About Us', path: '/about', description: 'Learn about Nobles Electrical Services, our standards, experience, and commitment to electrical safety.' },
     { title: 'Contact Us', path: '/contact', description: 'Get in touch for quotes, service inquiries, and appointments.' },
     { title: 'Frequently Asked Questions (FAQs)', path: '/faqs', description: 'Answers to common questions about our electrical repairs, panel work, and service process.' },
+    { title: 'HTML Sitemap Directory', path: '/sitemap', description: 'Visitor navigation directory linking to all services, service areas, reviews, and company information.' },
   ];
 
   return (
     <>
       <SEO
-        title={`HTML Sitemap | All Pages | ${business.name}`}
-        description={`Explore all pages and services on Nobles Electrical Services, LLC. Quick links to our residential, commercial, and local area electrical pages.`}
+        title="HTML Sitemap & Site Directory | Nobles Electrical Services"
+        description="Helpful visitor HTML sitemap for Nobles Electrical Services. Complete navigation directory of all residential, commercial, and local Louisiana service area pages. For search engine crawlers, view our XML sitemap."
         canonicalPath="sitemap"
         structuredData={localBusinessSchema}
       />
@@ -35,14 +37,21 @@ export default function SitemapPage() {
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 rounded-full border border-amber-400/30 bg-amber-400/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-amber-300">
               <FileText className="h-3.5 w-3.5" />
-              Site Directory
+              Visitor Site Directory
             </div>
             <h1 className="mt-4 font-display text-3xl font-bold leading-tight sm:text-4xl lg:text-5xl">
-              Website Sitemap
+              Website Sitemap &amp; Navigation Directory
             </h1>
             <p className="mt-4 text-base text-graphite-200 sm:text-lg">
-              Quick access to all pages, electrical service offerings, and local community service pages on {business.name}.
+              A helpful visual directory for visitors to quickly browse all electrical services, local service areas, and customer resources on {business.name}.
             </p>
+            <div className="mt-6 flex items-center gap-3 rounded-xl border border-white/10 bg-white/5 p-4 text-xs text-graphite-300">
+              <span className="font-semibold text-amber-400">Search Engine Crawlers:</span>
+              <span>This is an HTML directory for human visitors. For our machine-readable search engine index, access the</span>
+              <a href="/sitemap.xml" target="_blank" rel="noopener noreferrer" className="font-bold text-amber-400 underline hover:text-amber-300">
+                XML Sitemap (/sitemap.xml) &rarr;
+              </a>
+            </div>
           </div>
         </div>
       </section>

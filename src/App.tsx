@@ -13,6 +13,7 @@ const ServiceAreasPage = lazy(() => import('@/pages/ServiceAreasPage'));
 const AboutPage = lazy(() => import('@/pages/AboutPage'));
 const ContactPage = lazy(() => import('@/pages/ContactPage'));
 const FAQsPage = lazy(() => import('@/pages/FAQsPage'));
+const ReviewsPage = lazy(() => import('@/pages/ReviewsPage'));
 const SitemapPage = lazy(() => import('@/pages/SitemapPage'));
 
 function PageLoader() {
@@ -55,6 +56,7 @@ export default function App() {
               <Route path="/services/:serviceSlug" element={<ServiceRedirect />} />
               <Route path="/service-areas" element={<ServiceAreasPage />} />
               <Route path="/service-areas/:locationSlug" element={<ServiceAreaRedirect />} />
+              <Route path="/reviews" element={<ReviewsPage />} />
               <Route path="/about" element={<AboutPage />} />
               <Route path="/contact" element={<ContactPage />} />
               <Route path="/faqs" element={<FAQsPage />} />

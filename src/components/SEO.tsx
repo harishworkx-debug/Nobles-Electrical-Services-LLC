@@ -27,7 +27,7 @@ export default function SEO({ title, description, canonicalPath, ogImage, struct
     };
 
     setMeta('description', description);
-    setMeta('canonical', canonical);
+    setMeta('robots', 'index, follow');
 
     // Open Graph
     setMeta('og:title', title, 'property');

@@ -30,31 +30,32 @@ while ((match = locationBlockRegex.exec(locationsContent)) !== null) {
 }
 
 const mainPages = [
-  { path: '', changefreq: 'daily', priority: '1.0' },
-  { path: 'services', changefreq: 'weekly', priority: '0.9' },
-  { path: 'service-areas', changefreq: 'weekly', priority: '0.9' },
-  { path: 'about', changefreq: 'monthly', priority: '0.7' },
-  { path: 'contact', changefreq: 'monthly', priority: '0.7' },
-  { path: 'faqs', changefreq: 'weekly', priority: '0.7' },
-  { path: 'sitemap', changefreq: 'monthly', priority: '0.5' },
+  '',
+  'services',
+  'service-areas',
+  'reviews',
+  'about',
+  'contact',
+  'faqs',
+  'sitemap',
 ];
 
 let xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n`;
 
 xml += `  <!-- Main Core Pages -->\n`;
 for (const p of mainPages) {
-  const loc = p.path ? `${DOMAIN}/${p.path}` : `${DOMAIN}/`;
-  xml += `  <url>\n    <loc>${loc}</loc>\n    <lastmod>${TODAY}</lastmod>\n    <changefreq>${p.changefreq}</changefreq>\n    <priority>${p.priority}</priority>\n  </url>\n`;
+  const loc = p ? `${DOMAIN}/${p}` : `${DOMAIN}/`;
+  xml += `  <url>\n    <loc>${loc}</loc>\n    <lastmod>${TODAY}</lastmod>\n  </url>\n`;
 }
 
 xml += `\n  <!-- Service Pages -->\n`;
 for (const slug of serviceSlugMatches) {
-  xml += `  <url>\n    <loc>${DOMAIN}/${slug}</loc>\n    <lastmod>${TODAY}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>\n`;
+  xml += `  <url>\n    <loc>${DOMAIN}/${slug}</loc>\n    <lastmod>${TODAY}</lastmod>\n  </url>\n`;
 }
 
 xml += `\n  <!-- Service Area / Location Pages -->\n`;
 for (const slug of locationPages) {
-  xml += `  <url>\n    <loc>${DOMAIN}/${slug}</loc>\n    <lastmod>${TODAY}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>\n`;
+  xml += `  <url>\n    <loc>${DOMAIN}/${slug}</loc>\n    <lastmod>${TODAY}</lastmod>\n  </url>\n`;
 }
 
 xml += `</urlset>\n`;

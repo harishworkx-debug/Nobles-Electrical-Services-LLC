@@ -7,6 +7,7 @@ import SEO from '@/components/SEO';
 import CallCTA from '@/components/CallCTA';
 import FinalCTA from '@/components/FinalCTA';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import ReviewsSection from '@/components/ReviewsSection';
 import { business, images } from '@/data/business';
 import { localBusinessSchema } from '@/components/StructuredData';
 
@@ -34,8 +35,8 @@ export default function AboutPage() {
   return (
     <>
       <SEO
-        title={`About Us | ${business.name} | Zachary, LA Electrician`}
-        description={`Learn about Nobles Electrical Services, LLC — a Zachary, LA-based electrical contractor providing residential and light-commercial electrical services with a focus on safety and quality. Call ${business.phone}.`}
+        title="About Nobles Electrical Services | Mickel Nobles | Zachary, LA"
+        description="Learn about Nobles Electrical Services, LLC and owner Mickel Nobles. A Zachary, LA-based electrical contractor providing dependable residential and light-commercial electrical services with genuine 5.0-star craftsmanship. Call 225-472-0188."
         canonicalPath="about"
         structuredData={localBusinessSchema}
       />
@@ -46,7 +47,7 @@ export default function AboutPage() {
       <section className="relative overflow-hidden bg-navy-950 py-16 lg:py-24">
         <img
           src={images.electricianPanel}
-          alt=""
+          alt="Mickel Nobles electrical contractor in Zachary, LA"
           className="absolute inset-0 h-full w-full object-cover opacity-25"
           loading="lazy"
         />
@@ -55,48 +56,56 @@ export default function AboutPage() {
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 rounded-full border border-amber-400/30 bg-amber-400/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-amber-300">
               <Home className="h-3.5 w-3.5" />
-              About Us
+              Owner-Operated Local Business
             </div>
             <h1 className="mt-5 font-display text-4xl font-bold leading-tight text-white sm:text-5xl text-balance">
               About Nobles Electrical Services, LLC
             </h1>
             <p className="mt-5 max-w-2xl text-lg leading-relaxed text-graphite-200 text-balance">
-              We are a Zachary, Louisiana-based electrical contractor providing dependable electrical services to homeowners and small businesses across the surrounding communities.
+              Founded and led by Mickel Nobles, we are a Zachary, Louisiana-based electrical contractor delivering dependable, code-compliant residential and light-commercial electrical services across the Greater Baton Rouge region.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Who We Are */}
+      {/* Meet the Owner & Genuine Business History */}
       <section className="section-pad bg-white">
         <div className="container-x">
           <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-16">
             <div>
-              <span className="text-sm font-bold uppercase tracking-wider text-amber-600">Who We Are</span>
+              <span className="text-sm font-bold uppercase tracking-wider text-amber-600">Owner Experience &amp; Story</span>
               <h2 className="mt-3 font-display text-3xl font-bold text-navy-900 sm:text-4xl text-balance">
-                A Local Electrician You Can Trust
+                Led by Electrician Mickel Nobles
               </h2>
               <p className="mt-5 text-base leading-relaxed text-graphite-600">
-                {business.name} is based in {business.primaryCity}, {business.primaryStateAbbr}. We provide electrical services to residential customers and light-commercial businesses throughout the greater Zachary area and surrounding Louisiana communities.
+                Nobles Electrical Services was established with a singular standard: to provide homeowners and small business owners in Zachary with electrical craftsmanship that never cuts corners on safety, code integrity, or straightforward communication.
               </p>
               <p className="mt-4 text-base leading-relaxed text-graphite-600">
-                We focus on doing the job right — diagnosing problems accurately, installing safely, and communicating clearly from start to finish. Whether it is a single outlet replacement or a full panel upgrade, we approach every project with the same attention to detail and commitment to safety.
+                As owner and lead electrician, <strong>Mickel Nobles</strong> remains hands-on with every diagnostic, repair, and installation. With deep expertise across residential wiring, panel modernization, lighting aesthetics, and commercial circuits, Mickel has earned a reputation for being ethical, thorough, and punctually reliable.
+              </p>
+              <p className="mt-4 text-base leading-relaxed text-graphite-600">
+                That dedication is why local home inspectors and real estate professionals consistently recommend Nobles Electrical Services to their own clients — and trust Mickel to work on their personal homes.
               </p>
               <div className="mt-6 flex flex-wrap gap-3">
                 <CallCTA variant="primary" label={`Call ${business.phone}`} />
                 <Link to="/contact" className="btn-outline">
-                  Get in Touch
+                  Speak With Mickel Nobles
                   <ArrowRight className="h-4 w-4" />
                 </Link>
               </div>
             </div>
-            <div className="overflow-hidden rounded-2xl shadow-2xl shadow-navy-900/20">
-              <img
-                src={images.electricianDrill2}
-                alt="Electrician working on electrical equipment with precision and focus"
-                loading="lazy"
-                className="h-full w-full object-cover"
-              />
+            <div className="relative">
+              <div className="overflow-hidden rounded-2xl shadow-2xl shadow-navy-900/20">
+                <img
+                  src={images.electricianDrill2}
+                  alt="Mickel Nobles electrician working on electrical equipment with precision and focus"
+                  loading="lazy"
+                  className="h-full w-full object-cover"
+                />
+              </div>
+              <div className="mt-4 rounded-xl border border-amber-200 bg-amber-50/70 p-4 text-xs leading-relaxed text-navy-950">
+                <strong>Industry Trust:</strong> <em>&ldquo;I&rsquo;m a home inspector and I don&rsquo;t hesitate to refer my clients to him for repairs or upgrades. Knowledgeable, ethical, and makes sure the job is done correctly.&rdquo;</em> — Ryan McNabb, Licensed Home Inspector
+              </div>
             </div>
           </div>
         </div>
@@ -224,6 +233,13 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+
+      {/* Customer Reviews */}
+      <ReviewsSection
+        initialCount={3}
+        title="What Our Clients Say About Working With Us"
+        subtitle="Genuine Google reviews from homeowners and businesses who rely on Nobles Electrical Services."
+      />
 
       <FinalCTA />
     </>

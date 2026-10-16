@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Zap, Phone, MapPin, Clock, Mail } from 'lucide-react';
+import { Zap, Phone, MapPin, Clock, Mail, Star } from 'lucide-react';
 import { business } from '@/data/business';
 import { services } from '@/data/services';
 import { locations } from '@/data/locations';
@@ -30,6 +30,20 @@ export default function Footer() {
               <Phone className="h-4 w-4" />
               {business.phone}
             </a>
+
+            {/* Google Rating Badge */}
+            <Link
+              to="/reviews"
+              className="mt-4 inline-flex items-center gap-2 rounded-lg bg-navy-900 border border-navy-800 px-3 py-2 transition-colors hover:border-amber-400/40"
+            >
+              <div className="flex items-center gap-0.5">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="h-3 w-3 fill-amber-400 text-amber-400" />
+                ))}
+              </div>
+              <span className="text-xs font-bold text-white">5.0</span>
+              <span className="text-[11px] text-graphite-400">· 30 Google Reviews</span>
+            </Link>
           </div>
 
           {/* Services */}
@@ -126,6 +140,7 @@ export default function Footer() {
               &copy; {new Date().getFullYear()} {business.name}. All rights reserved.
             </p>
             <div className="flex items-center gap-5">
+              <Link to="/reviews" className="text-xs text-graphite-500 hover:text-amber-400">Reviews</Link>
               <Link to="/about" className="text-xs text-graphite-500 hover:text-amber-400">About</Link>
               <Link to="/contact" className="text-xs text-graphite-500 hover:text-amber-400">Contact</Link>
               <Link to="/faqs" className="text-xs text-graphite-500 hover:text-amber-400">FAQs</Link>

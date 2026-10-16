@@ -14,8 +14,8 @@ export default function FAQsPage() {
   return (
     <>
       <SEO
-        title={`FAQs | ${business.name} | Zachary, LA Electrician`}
-        description={`Frequently asked questions about electrical services from Nobles Electrical Services, LLC in Zachary, LA. Call ${business.phone} for answers to your electrical questions.`}
+        title="Electrical FAQs: Repairs, Pricing & Scheduling | Zachary, LA"
+        description="Clear answers to common questions about electrical repairs, upfront pricing, project estimates, scheduling turnaround, and safety codes from Nobles Electrical Services in Zachary, LA. Call 225-472-0188."
         canonicalPath="faqs"
         structuredData={faqSchema(generalFAQs)}
       />
@@ -29,13 +29,13 @@ export default function FAQsPage() {
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 rounded-full border border-amber-400/30 bg-amber-400/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-amber-300">
               <HelpCircle className="h-3.5 w-3.5" />
-              FAQs
+              Customer Knowledge Base
             </div>
             <h1 className="mt-5 font-display text-4xl font-bold leading-tight text-white sm:text-5xl text-balance">
-              Frequently Asked Questions
+              Frequently Asked Questions About Electrical Services, Pricing &amp; Scheduling
             </h1>
             <p className="mt-5 max-w-2xl text-lg leading-relaxed text-graphite-200 text-balance">
-              Answers to common questions about our electrical services, service areas, and how we work. Have a question that is not answered here? Call us at {business.phone}.
+              Get direct, honest answers on electrical diagnostics, estimate policies, emergency dispatch times, and permit coordination from owner Mickel Nobles. Have a question not listed here? Call {business.phone}.
             </p>
           </div>
         </div>

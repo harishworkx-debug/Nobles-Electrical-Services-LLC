@@ -134,6 +134,9 @@ export default function Header() {
                 )}
               </div>
 
+              <NavLink to="/reviews" className={navLinkClass}>
+                Reviews
+              </NavLink>
               <NavLink to="/about" className={navLinkClass}>
                 About Us
               </NavLink>
@@ -232,6 +235,9 @@ export default function Header() {
                 )}
               </div>
 
+              <NavLink to="/reviews" className={mobileNavLinkClass}>
+                Reviews (5.0 ★)
+              </NavLink>
               <NavLink to="/about" className={mobileNavLinkClass}>
                 About Us
               </NavLink>
