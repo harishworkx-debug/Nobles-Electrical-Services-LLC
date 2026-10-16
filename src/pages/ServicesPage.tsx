@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+﻿import { Link } from 'react-router-dom';
 import { ArrowRight, Zap, Phone, Home, Building2, ShieldCheck, CheckCircle2 } from 'lucide-react';
 import SEO from '@/components/SEO';
 import CallCTA from '@/components/CallCTA';
@@ -17,7 +17,7 @@ export default function ServicesPage() {
     <>
       <SEO
         title="Residential & Commercial Electrical Services | Zachary, LA | Nobles Electrical"
-        description="Comprehensive residential and commercial electrical services in Zachary, LA and surrounding areas. Troubleshooting, repairs, panel upgrades, wiring, lighting, EV chargers & safety inspections. Call 225-472-0188."
+        description="Comprehensive residential and commercial electrical services in Zachary, LA and surrounding areas. Troubleshooting, repairs, panel upgrades, wiring, lighting, EV chargers & safety inspections. Call 225-545-1284."
         canonicalPath="services"
         structuredData={localBusinessSchema}
       />

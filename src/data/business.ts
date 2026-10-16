@@ -1,7 +1,7 @@
-export const business = {
+﻿export const business = {
   name: 'Nobles Electrical Services, LLC',
-  phone: '225-472-0188',
-  phoneHref: 'tel:2254720188',
+  phone: '225-545-1284',
+  phoneHref: 'tel:2255451284',
   website: 'https://www.nobleselectricalservices.com/',
   mapsListing: 'https://maps.app.goo.gl/1F6qqiBPyJ7Bhghz5',
   mapsEmbed:

@@ -1,4 +1,4 @@
-export const generalFAQs: { q: string; a: string; category?: string }[] = [
+﻿export const generalFAQs: { q: string; a: string; category?: string }[] = [
   {
     q: 'How does your pricing work for electrical repairs and installations?',
     a: 'We believe in upfront, transparent, and fair pricing — one of our most praised qualities with 9+ specific Google customer reviews highlighting fair pricing. For clearly defined installations (such as panel upgrades, EV chargers, or light fixtures), we provide upfront project estimates before any work begins. For diagnostic troubleshooting, we explain our diagnostic process and discuss repair options and costs with you before proceeding with the fix. No hidden fees or surprise add-ons.',
@@ -11,7 +11,7 @@ export const generalFAQs: { q: string; a: string; category?: string }[] = [
   },
   {
     q: 'How quickly can I schedule an electrician in Zachary, LA?',
-    a: 'We strive to schedule routine installations and repairs within 24 to 48 hours of your call. If you are experiencing an urgent electrical safety hazard (burning smells, sparking outlets, buzzing panels, or sudden partial outages), we prioritize same-day emergency dispatch. Call 225-472-0188 directly to book the fastest available window.',
+    a: 'We strive to schedule routine installations and repairs within 24 to 48 hours of your call. If you are experiencing an urgent electrical safety hazard (burning smells, sparking outlets, buzzing panels, or sudden partial outages), we prioritize same-day emergency dispatch. Call 225-545-1284 directly to book the fastest available window.',
     category: 'Scheduling',
   },
   {
@@ -26,12 +26,12 @@ export const generalFAQs: { q: string; a: string; category?: string }[] = [
   },
   {
     q: 'What areas do you serve?',
-    a: 'We are based in Zachary, LA and serve the surrounding communities including Baton Rouge, Baker, Central, St. Francisville, Clinton, Port Allen, Brusly, Denham Springs, and Prairieville. If you are unsure whether we cover your area, give us a call at 225-472-0188.',
+    a: 'We are based in Zachary, LA and serve the surrounding communities including Baton Rouge, Baker, Central, St. Francisville, Clinton, Port Allen, Brusly, Denham Springs, and Prairieville. If you are unsure whether we cover your area, give us a call at 225-545-1284.',
     category: 'General',
   },
   {
     q: 'Do you offer emergency electrical service?',
-    a: 'We prioritize safety-related issues. If you have a burning smell, sparking, or a hot panel, call us immediately at 225-472-0188 and we will work to respond as quickly as possible. For non-emergency repairs, we schedule visits at the earliest available time.',
+    a: 'We prioritize safety-related issues. If you have a burning smell, sparking, or a hot panel, call us immediately at 225-545-1284 and we will work to respond as quickly as possible. For non-emergency repairs, we schedule visits at the earliest available time.',
     category: 'General',
   },
   {
@@ -46,7 +46,7 @@ export const generalFAQs: { q: string; a: string; category?: string }[] = [
   },
   {
     q: 'What should I do if my breaker keeps tripping?',
-    a: 'A breaker that trips repeatedly is signaling a problem — do not keep resetting it. Try unplugging devices on that circuit and resetting once. If it trips again immediately with nothing plugged in, or feels warm to the touch, leave it off and call us at 225-472-0188. Continuing to reset a tripping breaker risks electrical fire.',
+    a: 'A breaker that trips repeatedly is signaling a problem — do not keep resetting it. Try unplugging devices on that circuit and resetting once. If it trips again immediately with nothing plugged in, or feels warm to the touch, leave it off and call us at 225-545-1284. Continuing to reset a tripping breaker risks electrical fire.',
     category: 'Work',
   },
   {

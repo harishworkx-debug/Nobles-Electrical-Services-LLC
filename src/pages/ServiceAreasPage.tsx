@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+﻿import { Link } from 'react-router-dom';
 import { ArrowRight, MapPin, Zap, Phone, Clock, ShieldCheck, CheckCircle2 } from 'lucide-react';
 import SEO from '@/components/SEO';
 import CallCTA from '@/components/CallCTA';
@@ -13,7 +13,7 @@ export default function ServiceAreasPage() {
     <>
       <SEO
         title="Electrical Service Areas in Louisiana | Nobles Electrical Services"
-        description="Explore the actual service coverage of Nobles Electrical Services. Based in Zachary, LA and dispatching licensed electricians across Baton Rouge, Baker, Central, St. Francisville, Clinton, Port Allen, Brusly, Denham Springs, and Prairieville. Call 225-472-0188."
+        description="Explore the actual service coverage of Nobles Electrical Services. Based in Zachary, LA and dispatching licensed electricians across Baton Rouge, Baker, Central, St. Francisville, Clinton, Port Allen, Brusly, Denham Springs, and Prairieville. Call 225-545-1284."
         canonicalPath="service-areas"
         structuredData={localBusinessSchema}
       />

@@ -1,4 +1,4 @@
-export interface LocationData {
+﻿export interface LocationData {
   city: string;
   stateAbbr: string;
   slug: string;
@@ -28,7 +28,7 @@ export const locations: LocationData[] = [
     serviceSlug: 'electrician',
     serviceTitle: 'Electrician',
     metaTitle: 'Electrician in Zachary, LA | Nobles Electrical Services',
-    metaDescription: 'Headquartered in Zachary, LA. Nobles Electrical Services provides prompt residential & commercial electrical repairs, panel upgrades, and lighting. Call 225-472-0188.',
+    metaDescription: 'Headquartered in Zachary, LA. Nobles Electrical Services provides prompt residential & commercial electrical repairs, panel upgrades, and lighting. Call 225-545-1284.',
     h1: 'Electrician in Zachary, LA',
     parish: 'East Baton Rouge Parish',
     dispatchInfo: 'Primary Headquarters & Dispatch Hub. Average technician response time: under 30 minutes for urgent issues.',
@@ -66,7 +66,7 @@ export const locations: LocationData[] = [
       },
       {
         q: 'How fast can you respond to an electrical emergency in Zachary?',
-        a: 'For urgent safety hazards such as burning odors, sparking outlets, buzzing panels, or sudden partial power loss, we prioritize Zachary calls for same-day, often within-the-hour dispatch. Call 225-472-0188 immediately.'
+        a: 'For urgent safety hazards such as burning odors, sparking outlets, buzzing panels, or sudden partial power loss, we prioritize Zachary calls for same-day, often within-the-hour dispatch. Call 225-545-1284 immediately.'
       },
       {
         q: 'Do you coordinate electrical permits with the City of Zachary Inspection Department?',
@@ -85,7 +85,7 @@ export const locations: LocationData[] = [
     serviceSlug: 'electrician',
     serviceTitle: 'Electrician',
     metaTitle: 'Electrician in Baton Rouge, LA | Nobles Electrical Services',
-    metaDescription: 'Licensed electrician serving Baton Rouge, LA. Dispatched from Zachary. Expert panel upgrades, older home rewiring, lighting & commercial service. Call 225-472-0188.',
+    metaDescription: 'Licensed electrician serving Baton Rouge, LA. Dispatched from Zachary. Expert panel upgrades, older home rewiring, lighting & commercial service. Call 225-545-1284.',
     h1: 'Electrician in Baton Rouge, LA',
     parish: 'East Baton Rouge Parish',
     dispatchInfo: 'Mobile dispatch from our Zachary shop via US-61 / I-110 (approx. 20-25 minutes travel time).',
@@ -142,7 +142,7 @@ export const locations: LocationData[] = [
     serviceSlug: 'electrician',
     serviceTitle: 'Electrician',
     metaTitle: 'Electrician in Baker, LA | Nobles Electrical Services',
-    metaDescription: 'Trusted electrician serving Baker, LA. Based just north in Zachary. Electrical panel replacement, breaker repairs, wiring & inspections. Call 225-472-0188.',
+    metaDescription: 'Trusted electrician serving Baker, LA. Based just north in Zachary. Electrical panel replacement, breaker repairs, wiring & inspections. Call 225-545-1284.',
     h1: 'Electrician in Baker, LA',
     parish: 'East Baton Rouge Parish',
     dispatchInfo: 'Directly adjacent to our Zachary headquarters (approx. 8-12 minutes travel time via Hwy 19 / Groom Rd).',
@@ -195,7 +195,7 @@ export const locations: LocationData[] = [
     serviceSlug: 'electrician',
     serviceTitle: 'Electrician',
     metaTitle: 'Electrician in Central, LA | Nobles Electrical Services',
-    metaDescription: 'Licensed electrician serving Central, LA. Dispatched from Zachary via LA-64. Circuit repairs, panel upgrades, surge protection & generator switches. Call 225-472-0188.',
+    metaDescription: 'Licensed electrician serving Central, LA. Dispatched from Zachary via LA-64. Circuit repairs, panel upgrades, surge protection & generator switches. Call 225-545-1284.',
     h1: 'Electrician in Central, LA',
     parish: 'East Baton Rouge Parish',
     dispatchInfo: 'Fast east-west dispatch from Zachary via LA-64 (approx. 12-18 minutes travel time).',
@@ -248,7 +248,7 @@ export const locations: LocationData[] = [
     serviceSlug: 'electrician',
     serviceTitle: 'Electrician',
     metaTitle: 'Electrician in St. Francisville, LA | Nobles Electrical Services',
-    metaDescription: 'Professional electrician serving St. Francisville, LA. Dispatched from Zachary. Historic home wiring, panel upgrades, lighting & rural acreage service. Call 225-472-0188.',
+    metaDescription: 'Professional electrician serving St. Francisville, LA. Dispatched from Zachary. Historic home wiring, panel upgrades, lighting & rural acreage service. Call 225-545-1284.',
     h1: 'Electrician in St. Francisville, LA',
     parish: 'West Feliciana Parish',
     dispatchInfo: 'Northwest mobile dispatch from Zachary via US-61 (approx. 20-25 minutes travel time).',
@@ -301,7 +301,7 @@ export const locations: LocationData[] = [
     serviceSlug: 'electrician',
     serviceTitle: 'Electrician',
     metaTitle: 'Electrician in Clinton, LA | Nobles Electrical Services',
-    metaDescription: 'Licensed electrician serving Clinton, LA and East Feliciana Parish. Dispatched from Zachary. Panel replacements, farm subpanels, rewiring & repairs. Call 225-472-0188.',
+    metaDescription: 'Licensed electrician serving Clinton, LA and East Feliciana Parish. Dispatched from Zachary. Panel replacements, farm subpanels, rewiring & repairs. Call 225-545-1284.',
     h1: 'Electrician in Clinton, LA',
     parish: 'East Feliciana Parish',
     dispatchInfo: 'Northeast dispatch from Zachary via LA-67 (Plank Rd) — approx. 20-25 minutes travel time.',
@@ -354,7 +354,7 @@ export const locations: LocationData[] = [
     serviceSlug: 'electrician',
     serviceTitle: 'Electrician',
     metaTitle: 'Electrician in Port Allen, LA | Nobles Electrical Services',
-    metaDescription: 'Licensed electrician serving Port Allen, LA. Dispatched from Zachary via US-190. Panel replacements, troubleshooting, commercial wiring & inspections. Call 225-472-0188.',
+    metaDescription: 'Licensed electrician serving Port Allen, LA. Dispatched from Zachary via US-190. Panel replacements, troubleshooting, commercial wiring & inspections. Call 225-545-1284.',
     h1: 'Electrician in Port Allen, LA',
     parish: 'West Baton Rouge Parish',
     dispatchInfo: 'Southwest mobile dispatch from Zachary across the US-190 Mississippi River Bridge (approx. 25-30 minutes travel time).',
@@ -407,7 +407,7 @@ export const locations: LocationData[] = [
     serviceSlug: 'electrician',
     serviceTitle: 'Electrician',
     metaTitle: 'Electrician in Brusly, LA | Nobles Electrical Services',
-    metaDescription: 'Expert electrician serving Brusly, LA. Dispatched from Zachary. Rewiring, 200A panel upgrades, grounding & lighting for West Baton Rouge homes. Call 225-472-0188.',
+    metaDescription: 'Expert electrician serving Brusly, LA. Dispatched from Zachary. Rewiring, 200A panel upgrades, grounding & lighting for West Baton Rouge homes. Call 225-545-1284.',
     h1: 'Electrician in Brusly, LA',
     parish: 'West Baton Rouge Parish',
     dispatchInfo: 'Dispatched from Zachary via US-190 and LA-1 South through Port Allen (approx. 30-35 minutes travel time).',
@@ -449,7 +449,7 @@ export const locations: LocationData[] = [
       },
       {
         q: 'How do I schedule an electrical estimate in Brusly?',
-        a: 'Simply call us at 225-472-0188. We will discuss your project details and book a convenient appointment time.'
+        a: 'Simply call us at 225-545-1284. We will discuss your project details and book a convenient appointment time.'
       }
     ],
   },
@@ -460,7 +460,7 @@ export const locations: LocationData[] = [
     serviceSlug: 'electrician',
     serviceTitle: 'Electrician',
     metaTitle: 'Electrician in Denham Springs, LA | Nobles Electrical Services',
-    metaDescription: 'Licensed electrician serving Denham Springs, LA. Dispatched from Zachary via LA-64/I-12. Panel upgrades, EV chargers, rewiring & repairs. Call 225-472-0188.',
+    metaDescription: 'Licensed electrician serving Denham Springs, LA. Dispatched from Zachary via LA-64/I-12. Panel upgrades, EV chargers, rewiring & repairs. Call 225-545-1284.',
     h1: 'Electrician in Denham Springs, LA',
     parish: 'Livingston Parish',
     dispatchInfo: 'Eastbound dispatch from Zachary via LA-64 through Central or I-12 (approx. 25-30 minutes travel time).',
@@ -513,7 +513,7 @@ export const locations: LocationData[] = [
     serviceSlug: 'electrician',
     serviceTitle: 'Electrician',
     metaTitle: 'Electrician in Prairieville, LA | Nobles Electrical Services',
-    metaDescription: 'Professional electrician serving Prairieville, LA. Dispatched from Zachary. Panel upgrades, EV chargers, new circuits & lighting for Ascension homes. Call 225-472-0188.',
+    metaDescription: 'Professional electrician serving Prairieville, LA. Dispatched from Zachary. Panel upgrades, EV chargers, new circuits & lighting for Ascension homes. Call 225-545-1284.',
     h1: 'Electrician in Prairieville, LA',
     parish: 'Ascension Parish',
     dispatchInfo: 'Southeast dispatch from Zachary via I-110 and Airline Hwy / I-10 (approx. 35-40 minutes travel time).',
@@ -555,7 +555,7 @@ export const locations: LocationData[] = [
       },
       {
         q: 'How do you schedule appointments in Prairieville?',
-        a: 'Call us at 225-472-0188. We schedule convenient arrival windows and confirm travel timing in advance so you know exactly when to expect your electrician.'
+        a: 'call us at 225-545-1284. We schedule convenient arrival windows and confirm travel timing in advance so you know exactly when to expect your electrician.'
       }
     ],
   },

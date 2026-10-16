@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+﻿import { Link } from 'react-router-dom';
 import { ArrowRight, HelpCircle } from 'lucide-react';
 import SEO from '@/components/SEO';
 import CallCTA from '@/components/CallCTA';
@@ -15,7 +15,7 @@ export default function FAQsPage() {
     <>
       <SEO
         title="Electrical FAQs: Repairs, Pricing & Scheduling | Zachary, LA"
-        description="Clear answers to common questions about electrical repairs, upfront pricing, project estimates, scheduling turnaround, and safety codes from Nobles Electrical Services in Zachary, LA. Call 225-472-0188."
+        description="Clear answers to common questions about electrical repairs, upfront pricing, project estimates, scheduling turnaround, and safety codes from Nobles Electrical Services in Zachary, LA. Call 225-545-1284."
         canonicalPath="faqs"
         structuredData={faqSchema(generalFAQs)}
       />

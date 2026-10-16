@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+﻿import { Link } from 'react-router-dom';
 import { Phone, MapPin, Navigation, Clock, ArrowRight } from 'lucide-react';
 import SEO from '@/components/SEO';
 import CallCTA from '@/components/CallCTA';
@@ -10,8 +10,8 @@ export default function ContactPage() {
   return (
     <>
       <SEO
-        title="Contact Nobles Electrical Services | Zachary, LA | 225-472-0188"
-        description="Contact Nobles Electrical Services, LLC in Zachary, LA. Call 225-472-0188 for residential and commercial electrical appointments, emergency troubleshooting, and quotes. Mon-Fri 7AM-5PM."
+        title="Contact Nobles Electrical Services | Zachary, LA | 225-545-1284"
+        description="Contact Nobles Electrical Services, LLC in Zachary, LA. Call 225-545-1284 for residential and commercial electrical appointments, emergency troubleshooting, and quotes. Mon-Fri 7AM-5PM."
         canonicalPath="contact"
         structuredData={localBusinessSchema}
       />

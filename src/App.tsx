@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route, useParams, Navigate } from 'react-router-
 import ScrollToTop from '@/components/ScrollToTop';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import FloatingCallButton from '@/components/FloatingCallButton';
 import DynamicPage from '@/pages/DynamicPage';
 import { services } from '@/data/services';
 import { locations } from '@/data/locations';
@@ -67,6 +68,7 @@ export default function App() {
           </Suspense>
         </main>
         <Footer />
+        <FloatingCallButton />
       </div>
     </BrowserRouter>
   );

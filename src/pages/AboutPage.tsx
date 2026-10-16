@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+﻿import { Link } from 'react-router-dom';
 import {
   Shield, Zap, ClipboardCheck, Wrench, Home, Building2,
   ArrowRight, CheckCircle2, Phone, MapPin,
@@ -36,7 +36,7 @@ export default function AboutPage() {
     <>
       <SEO
         title="About Nobles Electrical Services | Mickel Nobles | Zachary, LA"
-        description="Learn about Nobles Electrical Services, LLC and owner Mickel Nobles. A Zachary, LA-based electrical contractor providing dependable residential and light-commercial electrical services with genuine 5.0-star craftsmanship. Call 225-472-0188."
+        description="Learn about Nobles Electrical Services, LLC and owner Mickel Nobles. A Zachary, LA-based electrical contractor providing dependable residential and light-commercial electrical services with genuine 5.0-star craftsmanship. Call 225-545-1284."
         canonicalPath="about"
         structuredData={localBusinessSchema}
       />

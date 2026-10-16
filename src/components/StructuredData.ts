@@ -4,7 +4,7 @@ export const localBusinessSchema = {
   '@context': 'https://schema.org',
   '@type': 'Electrician',
   name: business.name,
-  telephone: '+1-225-472-0188',
+  telephone: '225-545-1284',
   url: business.website,
   image: 'https://images.pexels.com/photos/257736/pexels-photo-257736.jpeg?auto=compress&cs=tinysrgb&w=1200',
   areaServed: [

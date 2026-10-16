@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+﻿import { Link } from 'react-router-dom';
 import {
   Phone, ArrowRight, Zap, Shield, Wrench, Lightbulb, Power, Settings,
   AlertTriangle, Home, Building2, Clock, CheckCircle2, MapPin, Star,
@@ -53,7 +53,7 @@ export default function HomePage() {
     <>
       <SEO
         title="Electrician in Zachary, LA | Noble's Electrical Services"
-        description="Reliable residential and commercial electrical services in Zachary, Louisiana. Contact Noble's Electrical Services for electrical repairs, installations and upgrades. Call 225-472-0188."
+        description="Reliable residential and commercial electrical services in Zachary, Louisiana. Contact Noble's Electrical Services for electrical repairs, installations and upgrades. Call 225-545-1284."
         canonicalPath=""
         structuredData={structuredData}
       />
